@@ -27,8 +27,3 @@ git status : 빨간 파일은 git에 올리지 않은 수정되거나 새로 만들어진 파일
 				초록 파일은 git에 올라갈 준비가 되어있는 파일
 
 
-
-cd Java_woarkspace
-git add .
-git commit -m "주석"
-git push
