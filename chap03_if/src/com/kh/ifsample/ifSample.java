@@ -1,0 +1,46 @@
+package com.kh.ifsample;
+
+public class ifSample {
+
+	public static void main(String[] args) {
+		// 조건문
+		/*
+		 if, else, else if 등의 문장을 사용해서 조건에 따라 다른 코드 블록 실행
+		 주어진 조건을 평가하고, 참일 경우 특정 코드 실행
+		 거짓일 경우 다른 코드 실행
+		 if(조건문) {
+		 	참(true)이면 실행
+		 	거짓(false)면 종료
+		 }
+		 */
+		
+		int money = 300;
+		if(money > 200) {
+			System.out.println("치킨 냠냠");
+		}
+	
+		int age = 18;
+		if (age >= 18) {
+			System.out.println("성인입니다");
+		}
+	
+		int temp = 25;
+		if(temp > 24) {
+			System.out.print("금일 날씨는 매우 좋습니다.");
+		}
+	
+		System.out.println("이상입니다. 뉴스였습니다.");
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}
