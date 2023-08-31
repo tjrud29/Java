@@ -47,7 +47,7 @@ public class While02 {
 	
 	boolean isFalse = false;
 	
-	while(!isFalse) {//반복문을 true로 설정하면 구문이 멈추지 않고 계속 실행되기 때문에 변수를 이용해서 
+	while(!isFalse) {//반복문을 true나 false로 설정하면 구문이 멈추지 않고 계속 실행되기 때문에 변수를 이용해서 
 		//원할 때 멈출수 있다.
 		//while문을 사용하는 이유는 만약에 잘못된 값을 입력하면 다시 입력할 수 있기 때문
 		System.out.println("나이를 입력하세요");
