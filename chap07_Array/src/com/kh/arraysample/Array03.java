@@ -6,36 +6,49 @@ public class Array03 {
 
 	public static void main(String[] args) {
 		
-			/*
-			  ¹®ÀÚ¿­¿¡ ÀÔ·Â ¹Ş¾Æ ¹®ÀÚ ÇÏ³ª ÇÏ³ª ¹è¿­¿¡ ³Ö°í °Ë»öÇÒ ¹®ÀÚ°¡
-			  ¹®ÀÚ¿­¿¡ ¸î°³ µé¾î°¡ ÀÖ´ÂÁö °³¼ö¿Í
-			  ¸î ¹øÂ° ÀÎµ¦½º¿¡ À§Ä¡ÇÏ´ÂÁö ÀÎµ¦½º Ãâ·ÂÇÏ±â
-			  
-			  
-			  1.¹®ÀÚ¿­¿¡ ÀÔ·Â
-			  2.¹®ÀÚ¿­ÀÇ ¹®ÀÚ °³¼ö
-			  3.ÇØ´ç ¹®ÀÚ°¡ ¹®ÀÚ¿­ÀÇ ¸î ¹øÂ° ¹®ÀÚ
-			 * */
+		/*
+		 * ì•ˆë…•í•˜ì„¸ìš” -> ì•ˆë…•í•˜ì„¸
+		 1. ë¬¸ìì—´ì„ ì…ë ¥ ë°›ì•„ 
+		 2. ë¬¸ì í•˜ë‚˜í•˜ë‚˜ ë°°ì—´ì— ë„£ê³ 
+		 3. ë¬¸ìì—´ì— ëª‡ ê°œ ë“¤ì–´ê°€ ìˆëŠ”ì§€ ê°œìˆ˜ì™€
+		 4. ê²€ìƒ‰í•  ë¬¸ì scanner
+		 5. ëª‡ ë²ˆì§¸ ì¸ë±ìŠ¤ì— ìœ„ì¹˜í•˜ëŠ”ì§€
+		 6. ì¸ë±ìŠ¤ ì¶œë ¥í•˜ê¸°
+		 * */
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”.");//1. ë¬¸ìì—´ì„ ì…ë ¥ ë°›ì•„
+		String inputString = sc.next();
+		
+		//2. ë¬¸ì í•˜ë‚˜ í•˜ë‚˜ ë°°ì—´ì— ë„£ëŠ”ë‹¤.
+		//String ì•ˆì— ìˆëŠ” ë¬¸ìë“¤ì„ ë°°ì—´ë¡œ ë‹´ëŠ”ë‹¤. 
+		//char ê°’ì´ë¼ëŠ” ë¬¸ìë¥¼ ë§Œë“¤ì–´ì„œ ë§Œë“  ë¬¸ìë“¤ì„ ë°°ì—´ì— ë„£ëŠ”ë‹¤.
+		//String ì•ˆì— charë°°ì—´ë¡œ ë§Œë“¤ì–´ì£¼ëŠ” ë…€ì„ => toCharArray
+		// ex) String ì•ˆë…•í•˜ì„¸ìš” = {'ì•ˆ','ë…•','í•˜','ì„¸','ìš”'}
+		char[] charArray = inputString.toCharArray();
+		//inputString ì— ì ì€ ë¬¸ìê°€ ë“¤ì–´ê°
+		
+		//3. ë¬¸ìì—´ì— ëª‡ ê°œ ë“¤ì–´ê°€ ìˆëŠ”ì§€ ê°œìˆ˜ì²´í¬
+		int arrLength = charArray.length;
+		System.out.println("ë¬¸ìì—´ ê°œìˆ˜ ì²´í¬ : "+arrLength);
+		
+		//3-1 ê²€ìƒ‰í•  ë¬¸ì scannerë¥¼ ì‚¬ìš©í•´ì„œ ë¬¸ìê²€ìƒ‰í•˜ê¸°
+		System.out.println("í•œê¸€ìë§Œ ì…ë ¥í•˜ì„¸ìš”.");
+		char searchChar = sc.next().charAt(0);
+		System.out.println("ì²« ê¸€ì : " + searchChar);
+		
+		//4. ë¬¸ìì—´ì— ì–´ë–¤ ê°’ì´ ë“¤ì–´ìˆëŠ”ì§€ í™•ì¸
+		//System.out.println("charArray[0] : " + charArray[0]);
+		for(int i = 0; i < arrLength; i++) {
+			//ë‚˜ëŠ” ì•ˆì´ë¼ëŠ” ê¸€ìê°€ ëª‡ ë²ˆì§¸ì— ë“¤ì–´ìˆëŠ”ì§€ ë„ˆë¬´ ê¶ê¸ˆí•´
+			//ë§Œì•½ì— ë°°ì—´ì— ë“¤ì–´ìˆëŠ” ê¸€ìì™€ ê²€ìƒ‰í•œ ê¸€ìê°€ ë˜‘ê°™ì´ ìƒê²¼ë‹¤ë©´!
+			if(charArray[i] == searchChar) {
+				System.out.println("charArray [ " + i + " ]");
+			} else if (charArray[i] != searchChar ) {
+				System.out.println("ì—†ëŠ” ì¹˜í‚¨ ì…ÂˆÂ•");
+			}
 
-			Scanner sc = new Scanner(System.in);
-			
-			System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä");
-			String inputString = sc.next();//¹®ÀÚ¿­
-			
-			System.out.println("°Ë»ö ÇÒ ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
-			char searchChar = sc.next().charAt(0);//¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·Â¹ŞÀ½
-			
-			char[] charString = inputString.toCharArray();	//toCharArray >>¹®ÀÚ¿­À» ¹®ÀÚ ¹è¿­·Î º¯È¯ÇÏ´Â ¿ªÇÒ
-			//String¸¦ char·Î ¹Ù²ãÁÜ
-			//¹®ÀÚ¿­À» ¹®ÀÚ·Î ¹İÈ¯
-			//String >> char
-			//¾È³çÇÏ¼¼¿ä >> '¾È', '³ç' ,'ÇÏ', '¼¼', '¿ä'
-			//°Ë»ö ÇÒ ¹®ÀÚ°¡ ¹®ÀÚ¿­¿¡ ¸î °³ µé¾î°¡ ÀÖ´ÂÁö °³¼ö
-			//¸î ¹øÂ° ÀÎµ¦½º¿¡ À§Ä¡ÇÏ´ÂÁö ÀÎµ¦½º Ãâ·ÂÇÏ±â 
-			
-			int charCount = charString.length;
-			System.out.println("¹®ÀÚ¿­ °³¼ö  :" + charString.length );
-			
+		}
 			
 			
 			

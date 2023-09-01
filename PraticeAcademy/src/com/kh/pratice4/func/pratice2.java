@@ -25,8 +25,7 @@ public class pratice2 {
 					isTrue = true;
 					//while의 조건문이 false로 바뀜
 
-					
-		        }
+						        }
 		
 		
 		
