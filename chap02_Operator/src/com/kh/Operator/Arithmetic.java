@@ -1,4 +1,4 @@
-package com.kh.Operator;
+ package com.kh.Operator;
 
 public class Arithmetic {
 
