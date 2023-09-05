@@ -12,7 +12,7 @@ public class productRun {
 		 product product3 = new product("피자",26,"나폴리피자");
 		
 		 
-		 
+		 	
 		 product1.information();
 		 product2.information();
 		 product3.information();

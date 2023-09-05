@@ -2,8 +2,8 @@ package com.kh.example.pratice3.vo;
 
 public class Circle {
 	//
-	double Pl;
-	int radius;
+	double Pl = 3.14;
+	int radius = 1;
 	
 	Circle(double Pl, int radius) {
 		this.Pl = Pl;
