@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="com.kh.example.pratice2.model.vo.product"/>
+    <fullyQualifiedTypeName name="com.kh.classAM.AM"/>
+    <fullyQualifiedTypeName name="com.kh.example.pratice2.model.vo.product2"/>
+    <fullyQualifiedTypeName name="com.kh.gettersetter.goodExam.GoodPlayer"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.kh.pattern.mvc.Model.userModel"/>
+    <fullyQualifiedTypeName name="com.kh.pattern.mvc.view.UsrView"/>
+    <fullyQualifiedTypeName name="com.kh.pattern.mvc.Model.StudentModel"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.kh.mvc.circle.mo.CircleController"/>
 </qualifiedTypeNameHistroy>

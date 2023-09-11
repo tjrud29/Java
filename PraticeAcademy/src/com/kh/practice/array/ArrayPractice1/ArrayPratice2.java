@@ -24,7 +24,7 @@ public class ArrayPratice2 {
 		
 		if(num <0) {
 			System.out.println("잘못 입력하셨습니다.");
-		} else if (num >6){
+		} else if (num >6) {
 				
 			System.out.println("잘못 입력하셨습니다.");
 					

@@ -1,6 +1,8 @@
 package com.kh.inheritance.calculator;
 
 public class Calculator {
+	int num1,num2; //객체변수 아님!!!!!
+	
 	//계산기 /더하기,빼기,곱하기,나누기
 	//1.더하기
 	public int add(int num1, int num2) {//파라미터 = 매개변수 숫자2개 넣어주기

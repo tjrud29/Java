@@ -6,6 +6,7 @@ public class CalrcularorRun extends Calculator{
 
 	public static void main(String[] args) {
 		//스캐너 이용해서 코드 변경하기
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("num1을 입력하세요");
