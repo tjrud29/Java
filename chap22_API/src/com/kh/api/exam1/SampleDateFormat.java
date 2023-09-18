@@ -19,5 +19,4 @@ public class SampleDateFormat {
 		//결과출력
 		System.out.println("포멧팅 된 날짜 및 시간 : " + forDate );
 	}
-
 }

@@ -45,5 +45,7 @@ public class Pratice4 {
 			SimpleDateFormat ss = new SimpleDateFormat("dd-EE");
 			String forDate = ss.format(currentDate);
 			System.out.println(forDate);
+			
+		
 		}
 }

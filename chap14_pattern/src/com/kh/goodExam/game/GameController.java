@@ -20,6 +20,7 @@ public class GameController {
 		view.displayGuessPromt();
 		int guess = sc.nextInt();
 		
+		if(model.inCorrectGuess(guess));
 		view.displayCorrectGuess();
 		
 		view.displayInCorrectGuess();

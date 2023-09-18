@@ -4,7 +4,7 @@ public class Animal {//동물 클래스 정의
 	private String name;
 	
 	
-	public Animal(String name) {
+	public  Animal(String name) {
 		this.name = name;
 	}		
 		

@@ -19,5 +19,5 @@ public class File_Delete_Main {
 			System.out.println("파일이 삭제 안됨");
 		}
 	}
-
+ 
 }
