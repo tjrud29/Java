@@ -46,21 +46,23 @@ public class BinaryTree {
 	private void inOrderTR(TreeNode root) {
 		if(root != null) {
 			inOrderTR(root.left);
-			System.out.println(root.data + " ");
+			System.out.println("root.left" +root.data);
 			inOrderTR(root.right);
+			System.out.println("root.right" +root.data);
 		}
 	}
 	public static void main(String[] args) {
 		BinaryTree tree = new BinaryTree();
 		
-		tree.insert(50);
-		tree.insert(787);
-		tree.insert(45);
-		tree.insert(34);
-		tree.insert(37);
+		tree.insert(1);
+		tree.insert(2);
+		tree.insert(3);
+		tree.insert(4);
+		tree.insert(5);
 		
 		System.out.println("이진 트리 중위 순회 결과 : "  );
 		tree.inOrderT();
+		
 	}
 
 }

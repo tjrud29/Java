@@ -8,7 +8,7 @@ import com.kh.ThreadMain.SimpleGame;
 
 public class GameMain {
 	public static void main(String[] args) {
-		//외부 클래스의 인스턴스를 생성
+		//외부 클래스의 인스턴스를 생성		
 		
 		// 게임 루프 스레드 시작
 		Thread gameThread = new Thread(new GameLoop2());
@@ -19,7 +19,7 @@ public class GameMain {
 			//사용자가 키보드로 입력한 바이트를 읽음
 			//사용자가 Enter키를 누를 때 까지 프로그램 일시 중지
 			System.in.read(); 
-		
+
 			GameLoop2.isGameOver = true;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

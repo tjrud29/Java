@@ -9,7 +9,7 @@ public class SimpleGame {
 	
 		//외부 클래스의 인스턴스를 생성
 		SimpleGame s = new SimpleGame();
-		Thread gameThread = new Thread(s.new Gm());
+		Thread gameThread = new Thread(s.new gm());
 		gameThread.start();
 		
 		// 게임 종료 조건 : 플레이어가 Enter 키를 누르면 게임 종료

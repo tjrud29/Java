@@ -1,4 +1,4 @@
-package com.kh.ArrayExam;
+		package com.kh.ArrayExam;
 
 import java.util.Scanner;
 
