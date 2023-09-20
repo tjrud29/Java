@@ -3,7 +3,7 @@ package com.kh.GraphMain;
 public class GraphMain {
 
 	public static void main(String[] args) {
-		int ver = 6;//그래프 노드의 수를 5로 나타냄
+		int ver = 9;//그래프 노드의 수를 5로 나타냄
 		Graph graph = new Graph(ver);
 		
 		//addEdge 간선 추가
@@ -15,15 +15,17 @@ public class GraphMain {
 		graph.addEdge(2, 5);
 		graph.addEdge(2 ,6);
 		graph.addEdge(4, 5);
-		graph.addEdge(4, 6);
 		graph.addEdge(5, 6);
+		graph.addEdge(4, 7);
+		graph.addEdge(6, 8);
+		
 		
 		
 		System.out.println("DFS 탐색 결과 :" );
 		
 		//DFS 탐색을 시작할 노드의 번호를 전달
 		//0으로 시작함
-		graph.DFS(6);
+		graph.DFS(4);
 		
 		
 		
