@@ -10,12 +10,14 @@ public class InetAddressName {
 		
 		
 		
+		
+		
 	} 
 	public void InetExam() {
 		
-		InetAddress address;
+		
 		try {
-			address = InetAddress.getByName("www.naver.com");
+			InetAddress	address = InetAddress.getByName("www.naver.com");
 			System.out.println("host name :" + address.getHostName());
 			System.out.println("Ip Adress : " + address.getHostAddress());
 			
