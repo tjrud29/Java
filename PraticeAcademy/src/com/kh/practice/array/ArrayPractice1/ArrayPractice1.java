@@ -20,6 +20,7 @@ public class ArrayPractice1 {
 			//arr[0] = 1;
 				arr[i] = 1 + i;
 				System.out.println(arr[i]);
+				     
 				
 				
 		}

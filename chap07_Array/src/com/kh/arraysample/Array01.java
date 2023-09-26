@@ -14,7 +14,7 @@ public class Array01 {
 		 데이터의 집합을 쉽게 다룰 수 있도록 도와줌
 		 배열의 구조는
 		 	배열의 생성 및 초기화
-		 	데이터타입[] 배열 이름 = new데이터타입[크기]
+		 	데이터타입[] 배열 이름 = new데이터타입[크기]	
 		 	
 		 특징 :
 		 1.고정된 크기 : 생성할 때 크기가 결정되고, 크기가 고정돼있음
@@ -41,9 +41,9 @@ public class Array01 {
 		String[] nameArrary = {"김경난", "김말동", "홍길동"};
 		
 		String[] stringArray = new String[3];
-		System.out.println(stringArray[2]);//배열 값을 지정하지 않아서 null이 결과값으로 뜸
+		System.out.println(stringArray[2]);//배열 값을 지정하지 않아서 null이 결과값으로 뜸    
 		
-		
+		         
 		String[] food = {"포도", "치킨", "밥", "불고기"};
 		int foodLength = food.length;
 		System.out.println("food배열의 길이 :" + foodLength);
