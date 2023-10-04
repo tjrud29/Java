@@ -14,8 +14,8 @@ public class InetAddressName {
 		
 	} 
 	public void InetExam() {
-		
-		
+			
+			
 		try {
 			InetAddress	address = InetAddress.getByName("www.naver.com");
 			System.out.println("host name :" + address.getHostName());
